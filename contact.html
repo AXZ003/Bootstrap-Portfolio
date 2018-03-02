@@ -19,16 +19,16 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Andrea Zepeda</a>
+            <a class="navbar-brand" href="index.html">Andrea Zepeda</a>
           </div>
       
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           
             <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">About <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="active"><a href="index.html">About <span class="sr-only">(current)</span></a></li>
+                    <li><a href="contact.html">Contact</a></li>
             
-              <li><a href="#">Portfolio</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -40,22 +40,73 @@
  <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <div class="page-header">
-          <h1>Contact</h1>
-        </div>
-        <div class="row">
-          <div class="col-md-3">
-            <img src="http://placehold.it/150x150" alt="Placeholder" class="img-thumbnail">
+          <div class="page-header">
+            <h1>Contact</h1>
           </div>
-          <div class="col-md-9">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, felis ut dictum tristique, nibh erat feugiat libero, sit amet fringilla mauris velit in mi. Duis tempus felis vitae felis vulputate pretium. Nullam commodo, est ac auctor ornare,
-              eros nisi fringilla sem, non pulvinar tortor lorem sit amet sem. Aenean quis erat facilisis, porttitor ex cursus, luctus enim. Curabitur et metus in lacus tristique sagittis et in lorem. Nunc id nisi et neque fringilla ultricies. Aenean
-              at feugiat elit, a posuere justo. Pellentesque egestas dolor et nisi venenatis, nec fermentum urna fringilla. Etiam efficitur porta purus, id posuere sem congue a.
-            </p>
-          </div>
-        </div>
+        
+          <div class="row">
+         
+              <!-- ///////////////////// Contact Me Form /////////////// -->
+              <form id="contact-form" method="post" action="contact.php" role="form">
+
+                <div class="messages"></div>
+            
+                <div class="controls">
+            
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_name">Name </label>
+                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Enter your name" required="required" data-error="Firstname is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_lastname">Lastname *</label>
+                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_email">Email </label>
+                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter your email" required="required" data-error="Valid email is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_phone">Phone</label>
+                                <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="form_message">Message</label>
+                                <textarea id="form_message" name="message" class="form-control" placeholder="Message for me" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="submit" class="btn btn-success btn-send" value="Submit">
+                        </div>
+                    </div>
+                    <!-- <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-muted"><strong>*</strong> These fields are required. Contact form template by <a href="http://bootstrapious.com" target="_blank">Bootstrapious</a>.</p>
+                        </div>
+                    </div> -->
+                </div>           
+              </form> 
+              <!-- ////// end contact form //// -->
       </div>
+    </div>
 
       <!-- //// PANEL START ///// -->
 
