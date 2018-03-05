@@ -215,7 +215,7 @@ input[type=submit]:hover {
 .card-body h4 {
 
     border-bottom: 0;
-    background: lightgray;
+    background: rgb(255, 195, 173);
     color: white;
     text-align:center;
     position: absolute;
@@ -225,15 +225,22 @@ input[type=submit]:hover {
     line-height: 15px;
     margin-bottom: 0;
     font-weight: 300;
-    margin-left: 45px;
-    
+    /* margin-left: 15px; */
+    width: 87.8%
     
 }
 
 a {
 
     color:white;
-    
+
+}
+
+.card-img {
+
+    height: 150px;
+    width: 200px;
+
 }
 
 
